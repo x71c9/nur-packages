@@ -9,7 +9,7 @@ rustPlatform.buildRustPackage rec {
     owner = "x71c9";
     repo = "tempesta";
     rev = "v${version}";
-    hash = "13ymy8zb7gbv6hnhqyc7dbci03nirf0j1idm80x0vn8ax00jy5dp";
+    hash = "sha256-txUvAegK2Q06QLXFIIHL0Q4Q2WqHeQwtNHu9sz7y1Y8=";
   };
 
   # Cargo dependency vendor hash (computed by Nix)

@@ -9,11 +9,11 @@ rustPlatform.buildRustPackage rec {
     owner = "x71c9";
     repo = "tempesta";
     rev = "v${version}";
-    hash = "0sp3gcfwaiy9nzfrs3hrijx2575ds49q0ym0gmpjlaf7q9kgnn0x";
+    hash = "sha256-HVj7ZsLHKSpvfaB6gBPRrZwiuowZDp3dt8lHxR1742o=";
   };
 
   # Cargo dependency vendor hash (computed by Nix)
-  cargoHash = "sha256-pofRefa67OE1FDTtdRfPAZKa7VgrXTiix7sCV1f2C1w=";
+  cargoHash = "sha256-mpCkuHKU8cF+j9eTjahTrzDy4ETs9iO5oMdO/jFxE8I=";
 
   # Enable when you have tests (recommended)
   doCheck = false;

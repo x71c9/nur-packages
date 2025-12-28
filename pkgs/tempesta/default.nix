@@ -4,18 +4,18 @@
 
 rustPlatform.buildRustPackage rec {
   pname = "tempesta";
-  version = "0.1.23"; # without "v"
+  version = "0.1.24"; # without "v"
 
   # Pin the source to an immutable tag/commit
   src = fetchFromGitHub {
     owner = "x71c9";
     repo = "tempesta";
     rev = "v${version}";
-    hash = "sha256-xrioHV9tChh4O34FyIayuVu0mbDd7tQ3iUvuw2GXVCU=";
+    hash = "sha256-CFQ0U0iwfVR+Lf0nJ0YMNuGK6TveE22Nljg0I8J5U9I=";
   };
 
   # Cargo dependency vendor hash (computed by Nix)
-  cargoHash = "sha256-gLlJnL4J7yplmaGBUoE482eoz2/Od4VR6aTsQUllBk0=";
+  cargoHash = "sha256-Bl5QJPRjD3szPIIz8pQ0X48lu0ijrLP4t6e+fTNLauU=";
 
   nativeBuildInputs = lib.optional completion.enable installShellFiles;
 
